@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0F692F717E8A91100E697DE /* starbucks-logo-small.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F692F617E8A91100E697DE /* starbucks-logo-small.png */; };
+		C0F692F917E8A91B00E697DE /* starbucks-logo-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F692F817E8A91B00E697DE /* starbucks-logo-retina.png */; };
+		C0F86A3917DF6F5C0072B605 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F86A3817DF6F5C0072B605 /* UIKit.framework */; };
+		C0F86A3B17DF6F5C0072B605 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F86A3A17DF6F5C0072B605 /* Foundation.framework */; };
+		C0F86A3D17DF6F5C0072B605 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F86A3C17DF6F5C0072B605 /* CoreGraphics.framework */; };
+		C0F86A4317DF6F5C0072B605 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0F86A4117DF6F5C0072B605 /* InfoPlist.strings */; };
+		C0F86A4517DF6F5C0072B605 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F86A4417DF6F5C0072B605 /* main.m */; };
+		C0F86A4917DF6F5C0072B605 /* MADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F86A4817DF6F5C0072B605 /* MADAppDelegate.m */; };
+		C0F86A4B17DF6F5C0072B605 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F86A4A17DF6F5C0072B605 /* Default.png */; };
+		C0F86A4D17DF6F5C0072B605 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F86A4C17DF6F5C0072B605 /* Default@2x.png */; };
+		C0F86A4F17DF6F5C0072B605 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F86A4E17DF6F5C0072B605 /* Default-568h@2x.png */; };
+		C0F86A5217DF6F5C0072B605 /* MADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F86A5117DF6F5C0072B605 /* MADViewController.m */; };
+		C0F86A5517DF6F5C0072B605 /* MADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0F86A5317DF6F5C0072B605 /* MADViewController.xib */; };
+		C0F86A5F17DF71C90072B605 /* frap.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F86A5C17DF71C90072B605 /* frap.png */; };
+		C0F86A6017DF71C90072B605 /* starbucks-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F86A5D17DF71C90072B605 /* starbucks-logo.png */; };
+		C0F86A6217DF729B0072B605 /* latte.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F86A6117DF729B0072B605 /* latte.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C0F692F617E8A91100E697DE /* starbucks-logo-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "starbucks-logo-small.png"; path = "../starbucks-logo-small.png"; sourceTree = "<group>"; };
+		C0F692F817E8A91B00E697DE /* starbucks-logo-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "starbucks-logo-retina.png"; path = "../starbucks-logo-retina.png"; sourceTree = "<group>"; };
+		C0F86A3517DF6F5C0072B605 /* starbucks-lab-03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "starbucks-lab-03.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F86A3817DF6F5C0072B605 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C0F86A3A17DF6F5C0072B605 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C0F86A3C17DF6F5C0072B605 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C0F86A4017DF6F5C0072B605 /* starbucks-lab-03-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "starbucks-lab-03-Info.plist"; sourceTree = "<group>"; };
+		C0F86A4217DF6F5C0072B605 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C0F86A4417DF6F5C0072B605 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0F86A4617DF6F5C0072B605 /* starbucks-lab-03-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "starbucks-lab-03-Prefix.pch"; sourceTree = "<group>"; };
+		C0F86A4717DF6F5C0072B605 /* MADAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADAppDelegate.h; sourceTree = "<group>"; };
+		C0F86A4817DF6F5C0072B605 /* MADAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADAppDelegate.m; sourceTree = "<group>"; };
+		C0F86A4A17DF6F5C0072B605 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C0F86A4C17DF6F5C0072B605 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C0F86A4E17DF6F5C0072B605 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C0F86A5017DF6F5C0072B605 /* MADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADViewController.h; sourceTree = "<group>"; };
+		C0F86A5117DF6F5C0072B605 /* MADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADViewController.m; sourceTree = "<group>"; };
+		C0F86A5417DF6F5C0072B605 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MADViewController.xib; sourceTree = "<group>"; };
+		C0F86A5C17DF71C90072B605 /* frap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frap.png; path = ../frap.png; sourceTree = "<group>"; };
+		C0F86A5D17DF71C90072B605 /* starbucks-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "starbucks-logo.png"; path = "../starbucks-logo.png"; sourceTree = "<group>"; };
+		C0F86A6117DF729B0072B605 /* latte.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = latte.png; path = ../latte.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0F86A3217DF6F5C0072B605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F86A3917DF6F5C0072B605 /* UIKit.framework in Frameworks */,
+				C0F86A3B17DF6F5C0072B605 /* Foundation.framework in Frameworks */,
+				C0F86A3D17DF6F5C0072B605 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0F86A2C17DF6F5C0072B605 = {
+			isa = PBXGroup;
+			children = (
+				C0F86A3E17DF6F5C0072B605 /* starbucks-lab-03 */,
+				C0F86A3717DF6F5C0072B605 /* Frameworks */,
+				C0F86A3617DF6F5C0072B605 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0F86A3617DF6F5C0072B605 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0F86A3517DF6F5C0072B605 /* starbucks-lab-03.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0F86A3717DF6F5C0072B605 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0F86A3817DF6F5C0072B605 /* UIKit.framework */,
+				C0F86A3A17DF6F5C0072B605 /* Foundation.framework */,
+				C0F86A3C17DF6F5C0072B605 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0F86A3E17DF6F5C0072B605 /* starbucks-lab-03 */ = {
+			isa = PBXGroup;
+			children = (
+				C0F86A4717DF6F5C0072B605 /* MADAppDelegate.h */,
+				C0F86A4817DF6F5C0072B605 /* MADAppDelegate.m */,
+				C0F86A5017DF6F5C0072B605 /* MADViewController.h */,
+				C0F86A5117DF6F5C0072B605 /* MADViewController.m */,
+				C0F86A5317DF6F5C0072B605 /* MADViewController.xib */,
+				C0F86A3F17DF6F5C0072B605 /* Supporting Files */,
+			);
+			path = "starbucks-lab-03";
+			sourceTree = "<group>";
+		};
+		C0F86A3F17DF6F5C0072B605 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0F692F817E8A91B00E697DE /* starbucks-logo-retina.png */,
+				C0F692F617E8A91100E697DE /* starbucks-logo-small.png */,
+				C0F86A6117DF729B0072B605 /* latte.png */,
+				C0F86A5C17DF71C90072B605 /* frap.png */,
+				C0F86A5D17DF71C90072B605 /* starbucks-logo.png */,
+				C0F86A4017DF6F5C0072B605 /* starbucks-lab-03-Info.plist */,
+				C0F86A4117DF6F5C0072B605 /* InfoPlist.strings */,
+				C0F86A4417DF6F5C0072B605 /* main.m */,
+				C0F86A4617DF6F5C0072B605 /* starbucks-lab-03-Prefix.pch */,
+				C0F86A4A17DF6F5C0072B605 /* Default.png */,
+				C0F86A4C17DF6F5C0072B605 /* Default@2x.png */,
+				C0F86A4E17DF6F5C0072B605 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0F86A3417DF6F5C0072B605 /* starbucks-lab-03 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F86A5817DF6F5C0072B605 /* Build configuration list for PBXNativeTarget "starbucks-lab-03" */;
+			buildPhases = (
+				C0F86A3117DF6F5C0072B605 /* Sources */,
+				C0F86A3217DF6F5C0072B605 /* Frameworks */,
+				C0F86A3317DF6F5C0072B605 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "starbucks-lab-03";
+			productName = "starbucks-lab-03";
+			productReference = C0F86A3517DF6F5C0072B605 /* starbucks-lab-03.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0F86A2D17DF6F5C0072B605 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MAD;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Katie Porter";
+			};
+			buildConfigurationList = C0F86A3017DF6F5C0072B605 /* Build configuration list for PBXProject "starbucks-lab-03" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C0F86A2C17DF6F5C0072B605;
+			productRefGroup = C0F86A3617DF6F5C0072B605 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0F86A3417DF6F5C0072B605 /* starbucks-lab-03 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0F86A3317DF6F5C0072B605 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F86A4317DF6F5C0072B605 /* InfoPlist.strings in Resources */,
+				C0F86A4B17DF6F5C0072B605 /* Default.png in Resources */,
+				C0F86A4D17DF6F5C0072B605 /* Default@2x.png in Resources */,
+				C0F86A4F17DF6F5C0072B605 /* Default-568h@2x.png in Resources */,
+				C0F86A5517DF6F5C0072B605 /* MADViewController.xib in Resources */,
+				C0F86A5F17DF71C90072B605 /* frap.png in Resources */,
+				C0F86A6017DF71C90072B605 /* starbucks-logo.png in Resources */,
+				C0F86A6217DF729B0072B605 /* latte.png in Resources */,
+				C0F692F717E8A91100E697DE /* starbucks-logo-small.png in Resources */,
+				C0F692F917E8A91B00E697DE /* starbucks-logo-retina.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0F86A3117DF6F5C0072B605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F86A4517DF6F5C0072B605 /* main.m in Sources */,
+				C0F86A4917DF6F5C0072B605 /* MADAppDelegate.m in Sources */,
+				C0F86A5217DF6F5C0072B605 /* MADViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C0F86A4117DF6F5C0072B605 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F86A4217DF6F5C0072B605 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C0F86A5317DF6F5C0072B605 /* MADViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F86A5417DF6F5C0072B605 /* en */,
+			);
+			name = MADViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0F86A5617DF6F5C0072B605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C0F86A5717DF6F5C0072B605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0F86A5917DF6F5C0072B605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "starbucks-lab-03/starbucks-lab-03-Prefix.pch";
+				INFOPLIST_FILE = "starbucks-lab-03/starbucks-lab-03-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C0F86A5A17DF6F5C0072B605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "starbucks-lab-03/starbucks-lab-03-Prefix.pch";
+				INFOPLIST_FILE = "starbucks-lab-03/starbucks-lab-03-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0F86A3017DF6F5C0072B605 /* Build configuration list for PBXProject "starbucks-lab-03" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F86A5617DF6F5C0072B605 /* Debug */,
+				C0F86A5717DF6F5C0072B605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F86A5817DF6F5C0072B605 /* Build configuration list for PBXNativeTarget "starbucks-lab-03" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F86A5917DF6F5C0072B605 /* Debug */,
+				C0F86A5A17DF6F5C0072B605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0F86A2D17DF6F5C0072B605 /* Project object */;
+}
