@@ -39,8 +39,8 @@
 		C023FC4A17EB4E1C000465E3 /* MADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADViewController.h; sourceTree = "<group>"; };
 		C023FC4B17EB4E1C000465E3 /* MADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADViewController.m; sourceTree = "<group>"; };
 		C023FC4E17EB4E1C000465E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MADViewController.xib; sourceTree = "<group>"; };
-		C023FC5517EB5E02000465E3 /* tip-calc-icon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tip-calc-icon-114x114.png"; sourceTree = "<group>"; };
-		C023FC5717EB6092000465E3 /* tip-calc-icon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tip-calc-icon-57x57.png"; sourceTree = "<group>"; };
+		C023FC5517EB5E02000465E3 /* tip-calc-icon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tip-calc-icon-114x114.png"; path = "../tip-calc-icon-114x114.png"; sourceTree = "<group>"; };
+		C023FC5717EB6092000465E3 /* tip-calc-icon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tip-calc-icon-57x57.png"; path = "../tip-calc-icon-57x57.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +60,6 @@
 		C023FC2617EB4E1C000465E3 = {
 			isa = PBXGroup;
 			children = (
-				C023FC5717EB6092000465E3 /* tip-calc-icon-57x57.png */,
-				C023FC5517EB5E02000465E3 /* tip-calc-icon-114x114.png */,
 				C023FC3817EB4E1C000465E3 /* tipcalculator-lab-05 */,
 				C023FC3117EB4E1C000465E3 /* Frameworks */,
 				C023FC3017EB4E1C000465E3 /* Products */,
@@ -102,6 +100,8 @@
 		C023FC3917EB4E1C000465E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C023FC5717EB6092000465E3 /* tip-calc-icon-57x57.png */,
+				C023FC5517EB5E02000465E3 /* tip-calc-icon-114x114.png */,
 				C023FC3A17EB4E1C000465E3 /* tipcalculator-lab-05-Info.plist */,
 				C023FC3B17EB4E1C000465E3 /* InfoPlist.strings */,
 				C023FC3E17EB4E1C000465E3 /* main.m */,
