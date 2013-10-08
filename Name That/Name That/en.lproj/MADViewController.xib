@@ -40,7 +40,7 @@
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUIImageView" id="914124554">
 						<reference key="NSNextResponder" ref="460240081"/>
-						<int key="NSvFlags">1312</int>
+						<int key="NSvFlags">1317</int>
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrameSize">{320, 44}</string>
 						<reference key="NSSuperview" ref="460240081"/>
@@ -286,10 +286,9 @@
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
 			<object class="IBUISlider" id="331993607">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">292</int>
 				<string key="NSFrameSize">{118, 23}</string>
-				<reference key="NSSuperview"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<bool key="IBUIOpaque">NO</bool>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -436,14 +435,14 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="914124554"/>
 							<reference ref="332682740"/>
-							<reference ref="490859873"/>
 							<reference ref="1023440371"/>
 							<reference ref="529703370"/>
+							<reference ref="490859873"/>
 							<reference ref="606688941"/>
 							<reference ref="447023584"/>
+							<reference ref="210530611"/>
 							<reference ref="238086630"/>
 							<reference ref="575739681"/>
-							<reference ref="210530611"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -625,10 +624,6 @@
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.iPhoneOS</string>
-			<real value="1552" key="NS.object.0"/>
-		</object>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDevelopmentDependencies">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.InterfaceBuilder3</string>
 			<integer value="4600" key="NS.object.0"/>

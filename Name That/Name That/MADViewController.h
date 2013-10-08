@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *secondOptionButton;
 @property (weak, nonatomic) IBOutlet UIButton *thirdOptionButton;
 @property (weak, nonatomic) IBOutlet UIButton *fourthOptionButton;
+
 @property (weak, nonatomic) IBOutlet UISlider *colorSlider;
 @property (weak, nonatomic) IBOutlet UILabel *colorCounter;
 @property (assign, nonatomic) NSInteger sliderValue;
