@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C02CB05417FCF21E00E2E19B /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = C02CB05217FCF21E00E2E19B /* black.png */; };
-		C02CB05517FCF21E00E2E19B /* purple.png in Resources */ = {isa = PBXBuildFile; fileRef = C02CB05317FCF21E00E2E19B /* purple.png */; };
-		C02CB05917FCFE7000E2E19B /* grey.png in Resources */ = {isa = PBXBuildFile; fileRef = C02CB05617FCFE7000E2E19B /* grey.png */; };
-		C02CB05A17FCFE7000E2E19B /* teal.png in Resources */ = {isa = PBXBuildFile; fileRef = C02CB05717FCFE7000E2E19B /* teal.png */; };
-		C02CB05B17FCFE7000E2E19B /* pink.png in Resources */ = {isa = PBXBuildFile; fileRef = C02CB05817FCFE7000E2E19B /* pink.png */; };
 		C02CB05F17FD0A7200E2E19B /* name-that-icon-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = C02CB05E17FD0A7200E2E19B /* name-that-icon-57x57.png */; };
 		C02CB06117FD0A7E00E2E19B /* name-that-icon-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = C02CB06017FD0A7E00E2E19B /* name-that-icon-114x114.png */; };
+		C05B515B180475AC00C71416 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = C05B514F180475AC00C71416 /* black.png */; };
+		C05B515C180475AC00C71416 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C05B5150180475AC00C71416 /* blue.png */; };
+		C05B515D180475AC00C71416 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = C05B5151180475AC00C71416 /* green.png */; };
+		C05B515E180475AC00C71416 /* grey.png in Resources */ = {isa = PBXBuildFile; fileRef = C05B5152180475AC00C71416 /* grey.png */; };
+		C05B515F180475AC00C71416 /* name-that-banner.png in Resources */ = {isa = PBXBuildFile; fileRef = C05B5153180475AC00C71416 /* name-that-banner.png */; };
+		C05B5160180475AC00C71416 /* name-that-enter.png in Resources */ = {isa = PBXBuildFile; fileRef = C05B5154180475AC00C71416 /* name-that-enter.png */; };
+		C05B5161180475AC00C71416 /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = C05B5155180475AC00C71416 /* orange.png */; };
+		C05B5162180475AC00C71416 /* pink.png in Resources */ = {isa = PBXBuildFile; fileRef = C05B5156180475AC00C71416 /* pink.png */; };
+		C05B5163180475AC00C71416 /* purple.png in Resources */ = {isa = PBXBuildFile; fileRef = C05B5157180475AC00C71416 /* purple.png */; };
+		C05B5164180475AC00C71416 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = C05B5158180475AC00C71416 /* red.png */; };
+		C05B5165180475AC00C71416 /* teal.png in Resources */ = {isa = PBXBuildFile; fileRef = C05B5159180475AC00C71416 /* teal.png */; };
+		C05B5166180475AC00C71416 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = C05B515A180475AC00C71416 /* yellow.png */; };
 		C0D4235017F8C6F6001BFD63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D4234F17F8C6F6001BFD63 /* UIKit.framework */; };
 		C0D4235217F8C6F6001BFD63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D4235117F8C6F6001BFD63 /* Foundation.framework */; };
 		C0D4235417F8C6F6001BFD63 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D4235317F8C6F6001BFD63 /* CoreGraphics.framework */; };
@@ -25,23 +32,23 @@
 		C0D4236617F8C6F7001BFD63 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D4236517F8C6F7001BFD63 /* Default-568h@2x.png */; };
 		C0D4236917F8C6F7001BFD63 /* MADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D4236817F8C6F7001BFD63 /* MADViewController.m */; };
 		C0D4236C17F8C6F7001BFD63 /* MADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0D4236A17F8C6F7001BFD63 /* MADViewController.xib */; };
-		C0D4237317F8CB9E001BFD63 /* name-that-banner.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D4237217F8CB9E001BFD63 /* name-that-banner.png */; };
-		C0D4237517F8CF1F001BFD63 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D4237417F8CF1F001BFD63 /* red.png */; };
-		C0D4237717F8D524001BFD63 /* name-that-enter.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D4237617F8D524001BFD63 /* name-that-enter.png */; };
-		C0D4237C17F8DC0C001BFD63 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D4237817F8DC0C001BFD63 /* blue.png */; };
-		C0D4237D17F8DC0C001BFD63 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D4237917F8DC0C001BFD63 /* green.png */; };
-		C0D4237E17F8DC0C001BFD63 /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D4237A17F8DC0C001BFD63 /* orange.png */; };
-		C0D4237F17F8DC0C001BFD63 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D4237B17F8DC0C001BFD63 /* yellow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C02CB05217FCF21E00E2E19B /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = black.png; path = ../../../images/black.png; sourceTree = "<group>"; };
-		C02CB05317FCF21E00E2E19B /* purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = purple.png; path = ../../../images/purple.png; sourceTree = "<group>"; };
-		C02CB05617FCFE7000E2E19B /* grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grey.png; path = ../../../images/grey.png; sourceTree = "<group>"; };
-		C02CB05717FCFE7000E2E19B /* teal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = teal.png; path = ../../../images/teal.png; sourceTree = "<group>"; };
-		C02CB05817FCFE7000E2E19B /* pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pink.png; path = ../../../images/pink.png; sourceTree = "<group>"; };
 		C02CB05E17FD0A7200E2E19B /* name-that-icon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "name-that-icon-57x57.png"; path = "../name-that-icon-57x57.png"; sourceTree = "<group>"; };
 		C02CB06017FD0A7E00E2E19B /* name-that-icon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "name-that-icon-114x114.png"; path = "../name-that-icon-114x114.png"; sourceTree = "<group>"; };
+		C05B514F180475AC00C71416 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = black.png; path = ../black.png; sourceTree = "<group>"; };
+		C05B5150180475AC00C71416 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue.png; path = ../blue.png; sourceTree = "<group>"; };
+		C05B5151180475AC00C71416 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green.png; path = ../green.png; sourceTree = "<group>"; };
+		C05B5152180475AC00C71416 /* grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grey.png; path = ../grey.png; sourceTree = "<group>"; };
+		C05B5153180475AC00C71416 /* name-that-banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "name-that-banner.png"; path = "../name-that-banner.png"; sourceTree = "<group>"; };
+		C05B5154180475AC00C71416 /* name-that-enter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "name-that-enter.png"; path = "../name-that-enter.png"; sourceTree = "<group>"; };
+		C05B5155180475AC00C71416 /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orange.png; path = ../orange.png; sourceTree = "<group>"; };
+		C05B5156180475AC00C71416 /* pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pink.png; path = ../pink.png; sourceTree = "<group>"; };
+		C05B5157180475AC00C71416 /* purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = purple.png; path = ../purple.png; sourceTree = "<group>"; };
+		C05B5158180475AC00C71416 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red.png; path = ../red.png; sourceTree = "<group>"; };
+		C05B5159180475AC00C71416 /* teal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = teal.png; path = ../teal.png; sourceTree = "<group>"; };
+		C05B515A180475AC00C71416 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellow.png; path = ../yellow.png; sourceTree = "<group>"; };
 		C0D4234C17F8C6F6001BFD63 /* Name That.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Name That.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0D4234F17F8C6F6001BFD63 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C0D4235117F8C6F6001BFD63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,13 +65,6 @@
 		C0D4236717F8C6F7001BFD63 /* MADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADViewController.h; sourceTree = "<group>"; };
 		C0D4236817F8C6F7001BFD63 /* MADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADViewController.m; sourceTree = "<group>"; };
 		C0D4236B17F8C6F7001BFD63 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MADViewController.xib; sourceTree = "<group>"; };
-		C0D4237217F8CB9E001BFD63 /* name-that-banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "name-that-banner.png"; path = "../../../images/name-that-banner.png"; sourceTree = "<group>"; };
-		C0D4237417F8CF1F001BFD63 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red.png; path = ../../../images/red.png; sourceTree = "<group>"; };
-		C0D4237617F8D524001BFD63 /* name-that-enter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "name-that-enter.png"; path = "../../../images/name-that-enter.png"; sourceTree = "<group>"; };
-		C0D4237817F8DC0C001BFD63 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue.png; path = ../../../images/blue.png; sourceTree = "<group>"; };
-		C0D4237917F8DC0C001BFD63 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green.png; path = ../../../images/green.png; sourceTree = "<group>"; };
-		C0D4237A17F8DC0C001BFD63 /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orange.png; path = ../../../images/orange.png; sourceTree = "<group>"; };
-		C0D4237B17F8DC0C001BFD63 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellow.png; path = ../../../images/yellow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,11 +124,11 @@
 		C0D4235617F8C6F6001BFD63 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C05B5153180475AC00C71416 /* name-that-banner.png */,
+				C05B5154180475AC00C71416 /* name-that-enter.png */,
 				C02CB06017FD0A7E00E2E19B /* name-that-icon-114x114.png */,
 				C02CB05E17FD0A7200E2E19B /* name-that-icon-57x57.png */,
 				C0D4238017F942AD001BFD63 /* Color Images */,
-				C0D4237617F8D524001BFD63 /* name-that-enter.png */,
-				C0D4237217F8CB9E001BFD63 /* name-that-banner.png */,
 				C0D4235717F8C6F6001BFD63 /* Name That-Info.plist */,
 				C0D4235817F8C6F6001BFD63 /* InfoPlist.strings */,
 				C0D4235B17F8C6F6001BFD63 /* main.m */,
@@ -143,16 +143,16 @@
 		C0D4238017F942AD001BFD63 /* Color Images */ = {
 			isa = PBXGroup;
 			children = (
-				C02CB05617FCFE7000E2E19B /* grey.png */,
-				C02CB05717FCFE7000E2E19B /* teal.png */,
-				C02CB05817FCFE7000E2E19B /* pink.png */,
-				C02CB05217FCF21E00E2E19B /* black.png */,
-				C02CB05317FCF21E00E2E19B /* purple.png */,
-				C0D4237817F8DC0C001BFD63 /* blue.png */,
-				C0D4237917F8DC0C001BFD63 /* green.png */,
-				C0D4237A17F8DC0C001BFD63 /* orange.png */,
-				C0D4237B17F8DC0C001BFD63 /* yellow.png */,
-				C0D4237417F8CF1F001BFD63 /* red.png */,
+				C05B514F180475AC00C71416 /* black.png */,
+				C05B5150180475AC00C71416 /* blue.png */,
+				C05B5151180475AC00C71416 /* green.png */,
+				C05B5152180475AC00C71416 /* grey.png */,
+				C05B5155180475AC00C71416 /* orange.png */,
+				C05B5156180475AC00C71416 /* pink.png */,
+				C05B5157180475AC00C71416 /* purple.png */,
+				C05B5158180475AC00C71416 /* red.png */,
+				C05B5159180475AC00C71416 /* teal.png */,
+				C05B515A180475AC00C71416 /* yellow.png */,
 			);
 			name = "Color Images";
 			sourceTree = "<group>";
@@ -219,20 +219,20 @@
 				C0D4236417F8C6F7001BFD63 /* Default@2x.png in Resources */,
 				C0D4236617F8C6F7001BFD63 /* Default-568h@2x.png in Resources */,
 				C0D4236C17F8C6F7001BFD63 /* MADViewController.xib in Resources */,
-				C0D4237317F8CB9E001BFD63 /* name-that-banner.png in Resources */,
-				C0D4237517F8CF1F001BFD63 /* red.png in Resources */,
-				C0D4237717F8D524001BFD63 /* name-that-enter.png in Resources */,
-				C0D4237C17F8DC0C001BFD63 /* blue.png in Resources */,
-				C0D4237D17F8DC0C001BFD63 /* green.png in Resources */,
-				C0D4237E17F8DC0C001BFD63 /* orange.png in Resources */,
-				C0D4237F17F8DC0C001BFD63 /* yellow.png in Resources */,
-				C02CB05417FCF21E00E2E19B /* black.png in Resources */,
-				C02CB05517FCF21E00E2E19B /* purple.png in Resources */,
-				C02CB05917FCFE7000E2E19B /* grey.png in Resources */,
-				C02CB05A17FCFE7000E2E19B /* teal.png in Resources */,
-				C02CB05B17FCFE7000E2E19B /* pink.png in Resources */,
 				C02CB05F17FD0A7200E2E19B /* name-that-icon-57x57.png in Resources */,
 				C02CB06117FD0A7E00E2E19B /* name-that-icon-114x114.png in Resources */,
+				C05B515B180475AC00C71416 /* black.png in Resources */,
+				C05B515C180475AC00C71416 /* blue.png in Resources */,
+				C05B515D180475AC00C71416 /* green.png in Resources */,
+				C05B515E180475AC00C71416 /* grey.png in Resources */,
+				C05B515F180475AC00C71416 /* name-that-banner.png in Resources */,
+				C05B5160180475AC00C71416 /* name-that-enter.png in Resources */,
+				C05B5161180475AC00C71416 /* orange.png in Resources */,
+				C05B5162180475AC00C71416 /* pink.png in Resources */,
+				C05B5163180475AC00C71416 /* purple.png in Resources */,
+				C05B5164180475AC00C71416 /* red.png in Resources */,
+				C05B5165180475AC00C71416 /* teal.png in Resources */,
+				C05B5166180475AC00C71416 /* yellow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
