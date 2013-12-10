@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>342ACCFA-5C38-4ACE-AC53-9958390D7E18</string>
+	<key>IDESourceControlProjectName</key>
+	<string>harryPotter-lab-14</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>38CD03E2-D566-4A7D-9FF2-B9F7A48B3643</key>
+		<string>https://github.com/katieporter/MAD.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>harryPotter-lab-14/harryPotter-lab-14.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>38CD03E2-D566-4A7D-9FF2-B9F7A48B3643</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/katieporter/MAD.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>38CD03E2-D566-4A7D-9FF2-B9F7A48B3643</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>38CD03E2-D566-4A7D-9FF2-B9F7A48B3643</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Katie Porter</string>
+		</dict>
+	</array>
+</dict>
+</plist>

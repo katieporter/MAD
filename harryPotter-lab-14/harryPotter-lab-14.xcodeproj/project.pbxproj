@@ -394,6 +394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "harryPotter-lab-14/harryPotter-lab-14-Prefix.pch";
 				INFOPLIST_FILE = "harryPotter-lab-14/harryPotter-lab-14-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -407,6 +408,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "harryPotter-lab-14/harryPotter-lab-14-Prefix.pch";
 				INFOPLIST_FILE = "harryPotter-lab-14/harryPotter-lab-14-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -473,6 +475,7 @@
 				C0EEF45D1828D6E000A8E48E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0EEF45E1828D6E000A8E48E /* Build configuration list for PBXNativeTarget "harryPotter-lab-14Tests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +484,7 @@
 				C0EEF4601828D6E000A8E48E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
