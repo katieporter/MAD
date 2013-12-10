@@ -40,6 +40,8 @@
         // Set the delegate so it can find out when the picture is ready
         imagePickerController.delegate = self;
         // Use the camera interface
+        imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+        // Display camera control
         imagePickerController.mediaTypes = [NSArray arrayWithObjects:(NSString *)kUTTypeImage, (NSString *)kUTTypeMovie, nil];
         // Slide up the camera interface
         [self presentViewController:imagePickerController animated:YES completion:NULL];
