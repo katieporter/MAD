@@ -7,6 +7,15 @@
 //
 
 #import "MADAppDelegate.h"
+#import "MADTask.h"
+#import "MADAddTaskViewController.h"
+
+@interface MADAppDelegate ()
+
+@property (strong, nonatomic) MADTask *howToA;
+@property (strong, nonatomic) MADTask *howToB;
+
+@end
 
 @implementation MADAppDelegate
 
@@ -14,8 +23,23 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
+// Help on this portion from here: http://stackoverflow.com/questions/3443540/calling-a-method-only-on-the-initial-launch-of-an-application
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"HasShownInitialHowto"] == NO) {
+        MADAppDelegate *applicationDelegate = [UIApplication sharedApplication].delegate;
+        NSManagedObjectContext *managedObjectContext = [applicationDelegate managedObjectContext];
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"Task" inManagedObjectContext:managedObjectContext];
+        self.howToA = [[MADTask alloc] initWithEntity:entity insertIntoManagedObjectContext:managedObjectContext];
+        self.howToB = [[MADTask alloc] initWithEntity:entity insertIntoManagedObjectContext:managedObjectContext];
+        
+        self.howToA.name = @"Tap to Edit";
+        self.howToA.dueDate = nil;
+        self.howToB.name = @"Swipe to Delete";
+        self.howToB.dueDate = nil;
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"HasShownInitialHowto"];
+    }
+    
     return YES;
 }
 

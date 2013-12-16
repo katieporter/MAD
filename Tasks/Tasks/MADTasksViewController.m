@@ -7,6 +7,7 @@
 //
 
 #import "MADTasksViewController.h"
+#import "MADAddTaskViewController.h"
 #import "MADAppDelegate.h"
 #import "MADTask.h"
 #import <QuartzCore/QuartzCore.h>
@@ -29,7 +30,7 @@
     // Read about core data fetch requests here: https://developer.apple.com/library/mac/documentation/cocoa/conceptual/coredata/Articles/cdFetching.html#//apple_ref/doc/uid/TP40002484-SW1
     MADAppDelegate *applicationDelegate = [UIApplication sharedApplication].delegate;
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Task"];
-    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]];
+    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"dueDate" ascending:YES]];
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
                                                                         managedObjectContext:[applicationDelegate managedObjectContext]
                                                                           sectionNameKeyPath:nil
@@ -84,9 +85,16 @@
     static NSString *CellIdentifier = @"TaskCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     MADTask *task = [self.fetchedResultsController.fetchedObjects objectAtIndex:indexPath.row];
+    
+    // Show task name in cell
     cell.textLabel.text = task.name;
-    // Will implement detail text (due date) in final project
-    cell.detailTextLabel.text = @"";
+    
+    // Show due date in right detail
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"M/d hh:mm aa"];
+    NSString *prettyDate = [dateFormat stringFromDate:task.dueDate];
+    cell.detailTextLabel.text = prettyDate;
+    
     return cell;
 }
 
@@ -124,33 +132,15 @@
     }
 }
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-#pragma mark - Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    if ([segue.identifier isEqualToString:@"EditSegue"]) {
+        UINavigationController *navigationController = [segue destinationViewController];
+        MADAddTaskViewController *addTaskViewController = [navigationController.viewControllers objectAtIndex:0];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        MADTask *task = [self.fetchedResultsController.fetchedObjects objectAtIndex:indexPath.row];
+        addTaskViewController.task = task;
+    }
 }
 
 @end

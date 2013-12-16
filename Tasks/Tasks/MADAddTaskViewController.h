@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MADAddTaskViewController : UITableViewController
+@class MADTask;
+
+@interface MADAddTaskViewController : UITableViewController <UIPickerViewDelegate>;
+
+@property (strong, nonatomic) MADTask *task;
+
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+
+- (IBAction)dissmissKeyboard:(UITextField *)sender;
 
 @end

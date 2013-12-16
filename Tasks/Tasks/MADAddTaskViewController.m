@@ -12,7 +12,9 @@
 
 @interface MADAddTaskViewController ()
 
-@property (strong, nonatomic) MADTask *task;
+@property (nonatomic, assign) BOOL shouldDeleteTask;
+@property (nonatomic, strong) NSString *oldName;
+@property (nonatomic, strong) NSDate *oldDate;
 
 @end
 
@@ -46,26 +48,49 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    // UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self
+                                                                         // action:@selector(dismissKeyboard)];
+    // tap.cancelsTouchesInView = NO;
+    // [self.view addGestureRecognizer:tap];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
-    // Create a new task
-    // Lots of help from here: https://developer.apple.com/library/mac/documentation/cocoa/conceptual/coredata/Articles/cdBasics.html#//apple_ref/doc/uid/TP40001650-TP1
-    MADAppDelegate *applicationDelegate = [UIApplication sharedApplication].delegate;
-    NSManagedObjectContext *managedObjectContext = [applicationDelegate managedObjectContext];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Task" inManagedObjectContext:managedObjectContext];
-    self.task = [[MADTask alloc] initWithEntity:entity insertIntoManagedObjectContext:managedObjectContext];
+    if (self.task == nil) {
+        // Create a new task
+        // Lots of help from here: https://developer.apple.com/library/mac/documentation/cocoa/conceptual/coredata/Articles/cdBasics.html#//apple_ref/doc/uid/TP40001650-TP1
+        MADAppDelegate *applicationDelegate = [UIApplication sharedApplication].delegate;
+        NSManagedObjectContext *managedObjectContext = [applicationDelegate managedObjectContext];
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"Task" inManagedObjectContext:managedObjectContext];
+        self.task = [[MADTask alloc] initWithEntity:entity insertIntoManagedObjectContext:managedObjectContext];
+        self.shouldDeleteTask = YES;
+    } else {
+        self.navigationItem.title = @"Edit Task";
+        self.oldName = self.task.name;
+        self.shouldDeleteTask = NO;
+        if (self.task.dueDate)
+        {
+            self.datePicker.date = self.task.dueDate;
+            self.oldDate = self.task.dueDate;
+        }
+    }
 }
 
 - (void)cancelButtonTapped
 {
-    MADAppDelegate *applicationDelegate = [UIApplication sharedApplication].delegate;
-    [applicationDelegate.managedObjectContext deleteObject:self.task];
-    NSError *error = nil;
-    if ([applicationDelegate.managedObjectContext save:&error]) {
+    if (self.shouldDeleteTask) {
+        MADAppDelegate *applicationDelegate = [UIApplication sharedApplication].delegate;
+        [applicationDelegate.managedObjectContext deleteObject:self.task];
+        NSError *error = nil;
+        if ([applicationDelegate.managedObjectContext save:&error]) {
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    } else {
+        self.task.name = self.oldName;
+        self.task.dueDate = self.oldDate;
         [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
@@ -77,8 +102,11 @@
     UITextField *nameTextField = (UITextField *)[nameCell viewWithTag:1];
     self.task.name = nameTextField.text;
     
+    // Pull date from picker and format
+    self.task.dueDate = _datePicker.date;
+    
     // Perform validatons
-    if ([self.task.name isEqualToString:@""] || !self.task.name) {
+    if ([self.task.name isEqualToString:@""] || !self.task.name){
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                         message:@"Please give your task a name!"
                                                        delegate:nil
@@ -126,8 +154,8 @@
 {
     static NSString *CellIdentifier = @"TaskNameCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
+    UITextField *nameTextField = (UITextField *)[cell viewWithTag:1];
+    nameTextField.text = self.task.name;
     
     return cell;
 }
@@ -184,4 +212,15 @@
      */
 }
 
+
+-(void)pickerView:(UIPickerView *)pickerView
+     didSelectRow:(NSInteger)row
+      inComponent:(NSInteger)component
+{
+}
+
+- (IBAction)dissmissKeyboard:(UITextField *)sender
+{
+    [sender resignFirstResponder];
+}
 @end
